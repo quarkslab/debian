@@ -17,14 +17,20 @@ See https://atlas.hashicorp.com/quarkslab/boxes.
 
 | Provider   | Box Name           | Version  | Atlas box link | Signature     | SHA256                                                           |
 | :------:   | :------:           | :-----:  | :------------: | :-------:     | :----:                                                           |
-| Virtualbox | debian-7.9.0-amd64 | 20151203 | [link][1]      | [link][1.sig] | e2bb207bc411f07b868af4457b53c13782c5cbecc4f617d73a556cf4030011fc |
 | Virtualbox | debian-8.2.0-amd64 | 20151203 | [link][2]      | [link][2.sig] | a16ec1f0454d60a1fd708a6b88498062a4dad223db30aa5df79a6e16e537a081 |
+| Libvirt    | debian-8.2.0-amd64 | 20151203 | [link][4]      | [link][4.sig] | a5ff693b1ae44a0837e4b171af51947c484fab889ab918e8b7a2f52f3a5a6daa |
+| Virtualbox | debian-7.9.0-amd64 | 20151203 | [link][1]      | [link][1.sig] | e2bb207bc411f07b868af4457b53c13782c5cbecc4f617d73a556cf4030011fc |
+| Libvirt    | debian-7.9.0-amd64 | 20151203 | [link][3]      | [link][3.sig] | 1c587d4a5c89831ce4da5049dde364e29d258e4940b5fdd7eeb769eba0f2e959 |
 
 
 [1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151203/providers/virtualbox.box
 [1.sig]: signatures/virtualbox/debian-7.9.0-amd64-nocm-20151203.box.sig
 [2]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151203/providers/virtualbox.box
 [2.sig]: signatures/virtualbox/debian-8.2.0-amd64-nocm-20151203.box.sig
+[3]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151203/providers/libvirt.box
+[3.sig]: signatures/libvirt/debian-7.9.0-amd64-nocm-20151203.box.sig
+[4]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151203/providers/libvirt.box
+[4.sig]: signatures/libvirt/debian-8.2.0-amd64-nocm-20151203.box.sig
 
 
 Test it with:
