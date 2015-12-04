@@ -21,6 +21,7 @@
                 " keymap=us",
                 " netcfg/get_hostname=vagrant",
                 " netcfg/get_domain=vm ",
+                " mirror/http/hostname={{user `mirror_http_hostname`}}",
                 "<enter>"
             ],
             "disk_size": "{{ user `disk_size` }}",
@@ -60,6 +61,7 @@
                 " keymap=us",
                 " netcfg/get_hostname=vagrant",
                 " netcfg/get_domain=vm ",
+                " mirror/http/hostname={{user `mirror_http_hostname`}}",
                 "<enter>"
             ],
             "disk_size": "{{ user `disk_size` }}",
@@ -101,6 +103,7 @@
                 " keymap=us",
                 " netcfg/get_hostname=vagrant",
                 " netcfg/get_domain=vm ",
+                " mirror/http/hostname={{user `mirror_http_hostname`}}",
                 "<enter>"
             ],
             "disk_size": "{{ user `disk_size` }}",
@@ -223,6 +226,7 @@
         "iso_path": "",
         "iso_url": "",
         "memory": "512",
+        "mirror_http_hostname": "ftp.fr.debian.org",
         "no_proxy": "{{env `no_proxy`}}",
         "parallels_guest_os_type": "debian",
         "preseed": "",
