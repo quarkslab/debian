@@ -79,44 +79,6 @@
             "vm_name": "{{ user `atlas_box_name` }}"
         },
         {
-            "type": "parallels-iso",
-
-            "guest_os_type": "{{ user `parallels_guest_os_type` }}",
-            "parallels_tools_flavor": "lin",
-            "prlctl": [
-                ["set", "{{.Name}}", "--memsize", "{{ user `memory` }}"],
-                ["set", "{{.Name}}", "--cpus", "{{ user `cpus` }}"]
-            ],
-            "prlctl_version_file": ".prlctl_version",
-
-            "boot_command": [
-                "<esc><wait>",
-                "install",
-                " auto",
-                " url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{ user `preseed` }}",
-                " debian-installer=en_US",
-                " locale=en_US",
-                " keymap=us",
-                " netcfg/get_hostname=vagrant",
-                " netcfg/get_domain=vm ",
-                "<enter>"
-            ],
-            "disk_size": "{{ user `disk_size` }}",
-            "http_directory": "http",
-            "iso_checksum": "{{ user `iso_checksum` }}",
-            "iso_checksum_type": "{{ user `iso_checksum_type` }}",
-            "iso_urls": [
-                "{{ user `iso_path` }}/{{ user `iso_name` }}",
-                "{{ user `iso_url` }}"
-            ],
-            "output_directory": "output-{{ user `atlas_box_name` }}-parallels-iso",
-            "shutdown_command": "echo 'vagrant'|sudo -S shutdown -h now",
-            "ssh_password": "{{ user `ssh_password` }}",
-            "ssh_username": "{{ user `ssh_username` }}",
-            "ssh_wait_timeout": "10000s",
-            "vm_name": "{{ user `atlas_box_name` }}"
-        },
-        {
             "type": "qemu",
 
             "accelerator": "kvm",
