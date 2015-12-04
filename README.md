@@ -24,14 +24,17 @@ See https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64.
 Test it:
 ```bash
     $ vagrant init quarkslab/debian-8.2.0-amd64
-    $ vagrant up --provider virtualbox # or Libvirt
+    $ vagrant up --provider virtualbox # or Libvirt or vmware_workstation
 ```
 
 | Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+| VMware_desktop | 20151204 | [link][8.2.0-amd64_3] | [link][8.2.0-amd64_3.sig] | 410741d6a9a267b8e68a7b5f99e80bc07d427400640dbf47f8aa7efb72b1c3a6 |
 | Virtualbox     | 20151203 | [link][8.2.0-amd64_2] | [link][8.2.0-amd64_2.sig] | a16ec1f0454d60a1fd708a6b88498062a4dad223db30aa5df79a6e16e537a081 |
 | Libvirt        | 20151203 | [link][8.2.0-amd64_1] | [link][8.2.0-amd64_1.sig] | a5ff693b1ae44a0837e4b171af51947c484fab889ab918e8b7a2f52f3a5a6daa |
 
+[8.2.0-amd64_3]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151204/providers/vmware_desktop.box
+[8.2.0-amd64_3.sig]: signatures/vmware/debian-8.2.0-amd64-nocm-20151204.box.sig
 [8.2.0-amd64_2]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151203/providers/virtualbox.box
 [8.2.0-amd64_2.sig]: signatures/virtualbox/debian-8.2.0-amd64-nocm-20151203.box.sig
 [8.2.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151203/providers/libvirt.box
@@ -45,14 +48,17 @@ See https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64.
 Test it:
 ```bash
     $ vagrant init quarkslab/debian-7.9.0-amd64
-    $ vagrant up --provider virtualbox # or Libvirt
+    $ vagrant up --provider virtualbox # or Libvirt or vmware_workstation
 ```
 
 | Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+| VMware_desktop | 20151204 | [link][7.9.0-amd64_3] | [link][7.9.0-amd64_3.sig] | 66844853efccbf1c2c1359d432d765d416a3734b19650dfec7f69ecbd402b49a |
 | Virtualbox     | 20151203 | [link][7.9.0-amd64_2] | [link][7.9.0-amd64_2.sig] | e2bb207bc411f07b868af4457b53c13782c5cbecc4f617d73a556cf4030011fc |
 | Libvirt        | 20151203 | [link][7.9.0-amd64_1] | [link][7.9.0-amd64_1.sig] | 1c587d4a5c89831ce4da5049dde364e29d258e4940b5fdd7eeb769eba0f2e959 |
 
+[7.9.0-amd64_3]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151204/providers/vmware_desktop.box
+[7.9.0-amd64_3.sig]: signatures/vmware/debian-7.9.0-amd64-nocm-20151204.box.sig
 [7.9.0-amd64_2]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151203/providers/virtualbox.box
 [7.9.0-amd64_2.sig]: signatures/virtualbox/debian-7.9.0-amd64-nocm-20151203.box.sig
 [7.9.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151203/providers/libvirt.box
@@ -69,6 +75,11 @@ Example:
     $ export ATLAS_TOKEN=<your-atlas-token> # See https://atlas.hashicorp.com/help/user-accounts/authentication
     $ packer-io build -only=virtualbox-iso -var-file=debian-7.9.0-amd64.json atlas-quarkslab.json
 ```
+
+Be careful with VMWare provider, there is a manual task to do:
+- When the mirror selection fail, click on "Go back"
+- Go back to the "selection step menu"
+- Select the "Configure Network" and then it should not fail again
 
 
 ## Security

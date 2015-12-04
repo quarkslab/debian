@@ -4,8 +4,9 @@
             "type": "vmware-iso",
 
             "guest_os_type": "{{ user `vmware_guest_os_type` }}",
-            "tools_upload_flavor": "linux",
+            "tools_upload_flavor": "{{ user `vmware_tools_upload_flavor`}}",
             "vmx_data": {
+                "cpuid.coresPerSocket": "1",
                 "memsize": "{{ user `memory` }}",
                 "numvcpus": "{{ user `cpus` }}"
             },
@@ -185,6 +186,18 @@
 
             "artifact": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
             "artifact_type": "vagrant.box"
+        },
+        {
+            "type": "atlas",
+
+            "only": ["vmware-iso"],
+            "metadata": {
+                "provider": "vmware_desktop",
+                "version": "{{user `version`}}"
+            },
+
+            "artifact": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
+            "artifact_type": "vagrant.box"
         }
     ]],
     "provisioners": [
@@ -257,6 +270,7 @@
         "update": "false",
         "version": "{{isotime \"20060102\"}}",
         "virtualbox_guest_os_type": "Debian_64",
-        "vmware_guest_os_type": ""
+        "vmware_guest_os_type": "",
+        "vmware_tools_upload_flavor": "linux"
     }
 }
