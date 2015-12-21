@@ -29,6 +29,9 @@ Test it:
 
 | Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+| VMware_desktop | 20151221 | [link][8.2.0-amd64_9] | [link][8.2.0-amd64_9.sig] | 4fa7d4483ba9d0e8701537a6e66cba28de1450510f5d62cb78655f3a477302d7 |
+| Libvirt        | 20151221 | [link][8.2.0-amd64_8] | [link][8.2.0-amd64_8.sig] | d359bd06dcadb5eb439f6fab10b48cc7039d213d3fef8e1a17182e633fb2dace |
+| Virtualbox     | 20151221 | [link][8.2.0-amd64_7] | [link][8.2.0-amd64_7.sig] | 315a13780656cfd9d26823c0b023f02e7eccf449e7861202e0bc197d09b7aa03 |
 | VMware_desktop | 20151214 | [link][8.2.0-amd64_6] | [link][8.2.0-amd64_6.sig] | 0ffdb3498547ec1cb1406fe4d5cf79c68b98c077f764b94087a10dd162ef3d8b |
 | Libvirt        | 20151214 | [link][8.2.0-amd64_5] | [link][8.2.0-amd64_5.sig] | dece236d7ba8d3508d662ea38bd4ddf7832a9b41763550452db0c05fe66ef185 |
 | Virtualbox     | 20151214 | [link][8.2.0-amd64_4] | [link][8.2.0-amd64_4.sig] | db853a50e0f698a8ba050c4a8d1d5344bc2f7c4c4e04f4341e625cea14fe9ef1 |
@@ -36,6 +39,12 @@ Test it:
 | Virtualbox     | 20151203 | [link][8.2.0-amd64_2] | [link][8.2.0-amd64_2.sig] | a16ec1f0454d60a1fd708a6b88498062a4dad223db30aa5df79a6e16e537a081 |
 | Libvirt        | 20151203 | [link][8.2.0-amd64_1] | [link][8.2.0-amd64_1.sig] | a5ff693b1ae44a0837e4b171af51947c484fab889ab918e8b7a2f52f3a5a6daa |
 
+[8.2.0-amd64_9]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151221/providers/vmware_desktop.box
+[8.2.0-amd64_9.sig]: signatures/vmware/debian-8.2.0-amd64-nocm-20151221.box.sig
+[8.2.0-amd64_8]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151221/providers/libvirt.box
+[8.2.0-amd64_8.sig]: signatures/libvirt/debian-8.2.0-amd64-nocm-20151221.box.sig
+[8.2.0-amd64_7]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151221/providers/virtualbox.box
+[8.2.0-amd64_7.sig]: signatures/virtualbox/debian-8.2.0-amd64-nocm-20151221.box.sig
 [8.2.0-amd64_6]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151214/providers/vmware_desktop.box
 [8.2.0-amd64_6.sig]: signatures/vmware/debian-8.2.0-amd64-nocm-20151214.box.sig
 [8.2.0-amd64_5]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64/versions/20151214/providers/libvirt.box
@@ -62,6 +71,9 @@ Test it:
 
 | Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+| VMware_desktop | 20151221 | [link][7.9.0-amd64_9] | [link][7.9.0-amd64_9.sig] | b623171a2d8615066491d5c35550a8b9ed5a3f0e1e129283a10bdb16f2792f6d |
+| Libvirt        | 20151221 | [link][7.9.0-amd64_8] | [link][7.9.0-amd64_8.sig] | 8aed579107abe7567d8ac37d7b74f7a69648eb8e9fd0a953e8da49bdb924e3ad |
+| Virtualbox     | 20151221 | [link][7.9.0-amd64_7] | [link][7.9.0-amd64_7.sig] | 5a89de9e03618a9b53501a1532cc9e8407bfcdb9c1bd401cb5c3e9006ca0cf16 |
 | VMware_desktop | 20151214 | [link][7.9.0-amd64_6] | [link][7.9.0-amd64_6.sig] | 07294f1577e7bf916d17ee0856e6b0c14549d0335fcb9c654bb6b7569fe371a0 |
 | Libvirt        | 20151214 | [link][7.9.0-amd64_5] | [link][7.9.0-amd64_5.sig] | 4cd4d73c031f48229a07e02f196d87163015c547d069a80623861a510e3ecfcc |
 | Virtualbox     | 20151214 | [link][7.9.0-amd64_4] | [link][7.9.0-amd64_4.sig] | b4525937119867d8cd17b37b08a07b3fae52d1469af5983bba11d3d5513e813d |
@@ -69,6 +81,12 @@ Test it:
 | Virtualbox     | 20151203 | [link][7.9.0-amd64_2] | [link][7.9.0-amd64_2.sig] | e2bb207bc411f07b868af4457b53c13782c5cbecc4f617d73a556cf4030011fc |
 | Libvirt        | 20151203 | [link][7.9.0-amd64_1] | [link][7.9.0-amd64_1.sig] | 1c587d4a5c89831ce4da5049dde364e29d258e4940b5fdd7eeb769eba0f2e959 |
 
+[7.9.0-amd64_9]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151221/providers/vmware_desktop.box
+[7.9.0-amd64_9.sig]: signatures/vmware/debian-7.9.0-amd64-nocm-20151221.box.sig
+[7.9.0-amd64_8]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151221/providers/libvirt.box
+[7.9.0-amd64_8.sig]: signatures/libvirt/debian-7.9.0-amd64-nocm-20151221.box.sig
+[7.9.0-amd64_7]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151221/providers/virtualbox.box
+[7.9.0-amd64_7.sig]: signatures/virtualbox/debian-7.9.0-amd64-nocm-20151221.box.sig
 [7.9.0-amd64_6]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151214/providers/vmware_desktop.box
 [7.9.0-amd64_6.sig]: signatures/vmware/debian-7.9.0-amd64-nocm-20151214.box.sig
 [7.9.0-amd64_5]: https://atlas.hashicorp.com/quarkslab/boxes/debian-7.9.0-amd64/versions/20151214/providers/libvirt.box
