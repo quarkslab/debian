@@ -214,7 +214,7 @@
         "cm": "nocm",
         "cm_version": "",
         "cpus": "1",
-        "disk_size": "20000",
+        "disk_size": "60000",
         "ftp_proxy": "{{env `ftp_proxy`}}",
         "headless": "false",
         "http_proxy": "{{env `http_proxy`}}",
