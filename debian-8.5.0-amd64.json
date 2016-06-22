@@ -1,0 +1,9 @@
+{
+  "atlas_box_name": "debian-8.5.0-amd64",
+  "iso_checksum": "bae2993da1f4db264b347c414831d0f21e94b959c26a3ccfa16baf5591a2eaa4a7fd860e15070cf7d38de968c211eb39c72b56fa40b35427cf75fafc3c8d9a95",
+  "iso_checksum_type": "sha512",
+  "iso_name": "debian-8.5.0-amd64-DVD-1.iso",
+  "iso_url": "",
+  "preseed" : "preseed-jessie.cfg",
+  "vmware_guest_os_type": "debian8-64"
+}

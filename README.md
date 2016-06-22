@@ -17,6 +17,24 @@ See original repo here: https://github.com/boxcutter/debian.
 See https://atlas.hashicorp.com/quarkslab/boxes.
 
 
+### Debian 8.5.0 AMD64
+
+See https://atlas.hashicorp.com/quarkslab/boxes/debian-8.5.0-amd64.
+
+Test it:
+```bash
+    $ vagrant init quarkslab/debian-8.5.0-amd64
+    $ vagrant up --provider vmware_workstation
+```
+
+| Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
+| :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+| VMware_desktop | 20161221 | [link][8.5.0-amd64_1] | [link][8.5.0-amd64_1.sig] | 83b620fe254ed2bad9dedb007ada4644dadd94478421d82d63fa4181ca21bd08 |
+
+[8.5.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.5.0-amd64/versions/20160622/providers/vmware_desktop.box
+[8.5.0-amd64_1.sig]: signatures/vmware/debian-8.5.0-amd64-nocm-20160622.box.sig
+
+
 ### Debian 8.2.0 AMD64
 
 See https://atlas.hashicorp.com/quarkslab/boxes/debian-8.2.0-amd64.
