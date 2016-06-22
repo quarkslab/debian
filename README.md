@@ -121,6 +121,8 @@ Test it:
 
 ## Generate Boxes
 
+Don't forget to download in the directory the ISO file listed in the debian-X.X.X-amd64.json file.
+
 If you want to automatically upload the Vagrant box you’ve created to the [Atlas
 platform](https://atlas.hashicorp.com), check the `atlas-quarkslab.json`.
 
@@ -130,7 +132,9 @@ Example:
     $ packer-io build -only=virtualbox-iso -var-file=debian-7.9.0-amd64.json atlas-quarkslab.json
 ```
 
-Be careful with VMWare provider, there is a manual task to do:
+### Troubleshooting
+
+Be careful with VMWare provider, they may need a manual task to do:
 - When the mirror selection fail, click on "Go back"
 - Go back to the "selection step menu"
 - Select the "Configure Network" and then it should not fail again

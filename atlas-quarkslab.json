@@ -223,7 +223,7 @@
         "iso_checksum": "",
         "iso_checksum_type": "",
         "iso_name": "",
-        "iso_path": "",
+        "iso_path": "./",
         "iso_url": "",
         "memory": "512",
         "mirror_http_hostname": "ftp.fr.debian.org",
