@@ -1,0 +1,11 @@
+{
+  "atlas_box_name": "debian-8.6.0-amd64",
+  "iso_checksum": "6c3b53d2a33e34644153683f4492a7773340812c540eb3c5fdeee61e0c8dbafb2f9d634db0d2518b44fbf16770ec15f80561b49c280e27984e887ac71bfb3c3a",
+  "iso_checksum_type": "sha512",
+  "iso_name": "debian-8.6.0-amd64-netinst.iso",
+  "iso_url": "http://cdimage.debian.org/cdimage/release/8.6.0/amd64/iso-cd/debian-8.6.0-amd64-netinst.iso",
+  "preseed" : "preseed-jessie.cfg",
+  "vmware_guest_os_type": "debian8-64",
+  "headless": "true"
+}
+

@@ -4,6 +4,8 @@ See original repo here: https://github.com/boxcutter/debian.
 
 
 1. [Boxes informations](#boxes-informations)
+    1. [Debian 8.6.0 AMD64](debian-8.6.0-amd64)
+    1. [Debian 8.5.0 AMD64](debian-8.5.0-amd64)
     1. [Debian 8.2.0 AMD64](debian-8.2.0-amd64)
     2. [Debian 7.9.0 AMD64](debian-7.9.0-amd64)
 2. [Generate Boxes](#generate-boxes)
@@ -15,6 +17,26 @@ See original repo here: https://github.com/boxcutter/debian.
 ## Boxes informations
 
 See https://atlas.hashicorp.com/quarkslab/boxes.
+
+
+### Debian 8.6.0 AMD64
+
+See https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64.
+
+Test it:
+```bash
+    $ vagrant init quarkslab/debian-8.6.0-amd64
+    $ vagrant up --provider virtualbox # or libvirt
+```
+
+| Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
+| :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
+|   Virtualbox   | 20161213 | [link][8.6.0-amd64_1] |  | 55fb56e7f904be1d6196a54518b88f332655b4c494aa4b43c5a3f0466815b7d4 |
+|     Libvirt    | 20161213 | [link][8.6.0-amd64_2] | | 92aab12bddc88408c51b48e898acc22b29cc007e4ca2b798c268343bf789642a |
+
+[8.6.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64/versions/20161213/providers/virtualbox.box
+[8.6.0-amd64_2]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64/versions/20161213/providers/libvirt.box
+
 
 
 ### Debian 8.5.0 AMD64
@@ -29,7 +51,7 @@ Test it:
 
 | Provider       | Version  | Atlas box link        | Signature                 | SHA256                                                           |
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
-| VMware_desktop | 20161221 | [link][8.5.0-amd64_1] | [link][8.5.0-amd64_1.sig] | 83b620fe254ed2bad9dedb007ada4644dadd94478421d82d63fa4181ca21bd08 |
+| VMware_desktop | 20160622 | [link][8.5.0-amd64_1] | [link][8.5.0-amd64_1.sig] | 83b620fe254ed2bad9dedb007ada4644dadd94478421d82d63fa4181ca21bd08 |
 
 [8.5.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.5.0-amd64/versions/20160622/providers/vmware_desktop.box
 [8.5.0-amd64_1.sig]: signatures/vmware/debian-8.5.0-amd64-nocm-20160622.box.sig
@@ -167,6 +189,7 @@ To verify box integrity of downloaded boxes (located in `~/.vagrant.d/boxes`)
 or integrity of the README.md (for SHA256 informations):
 ```bash
     $ gpg --recv-keys 24CF4A6F
+    $ gpg --recv-keys FCC3ED6D
     $ gpg --verify <signature_file> <file_to_verify>
 
     $ gpg --verify README.md.sig
