@@ -33,9 +33,11 @@ Test it:
 | :------:       | :-----:  | :------------:        | :-------:                 | :----:                                                           |
 |   Virtualbox   | 20161213 | [link][8.6.0-amd64_1] |  | 55fb56e7f904be1d6196a54518b88f332655b4c494aa4b43c5a3f0466815b7d4 |
 |     Libvirt    | 20161213 | [link][8.6.0-amd64_2] | | 92aab12bddc88408c51b48e898acc22b29cc007e4ca2b798c268343bf789642a |
+|     Libvirt    | 20170118 | [link][8.6.0-amd64_3] | | a5779499969eba61509730a16c046b970c60901fe6128c2c6af1bbf5cd62c596 |
 
 [8.6.0-amd64_1]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64/versions/20161213/providers/virtualbox.box
 [8.6.0-amd64_2]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64/versions/20161213/providers/libvirt.box
+[8.6.0-amd64_3]: https://atlas.hashicorp.com/quarkslab/boxes/debian-8.6.0-amd64/versions/20170118/providers/libvirt.box
 
 
 
