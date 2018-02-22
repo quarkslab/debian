@@ -133,40 +133,27 @@
             "type": "vagrant"
         },
         {
-            "type": "atlas",
-
+            "type": "vagrant-cloud",
             "only": ["virtualbox-iso"],
-            "metadata": {
-                "provider": "virtualbox",
-                "version": "{{user `version`}}"
-            },
-
-            "artifact": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
-            "artifact_type": "vagrant.box"
+            "box_tag": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
+            "access_token": "{{user `vagrantcloud_token`}}",
+            "version": "{{user `version`}}"
         },
         {
-            "type": "atlas",
+            "type": "vagrant-cloud",
 
             "only": ["qemu"],
-            "metadata": {
-                "provider": "libvirt",
-                "version": "{{user `version`}}"
-            },
-
-            "artifact": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
-            "artifact_type": "vagrant.box"
+            "box_tag": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
+            "access_token": "{{user `vagrantcloud_token`}}",
+            "version": "{{user `version`}}"
         },
         {
-            "type": "atlas",
+            "type": "vagrant-cloud",
 
             "only": ["vmware-iso"],
-            "metadata": {
-                "provider": "vmware_desktop",
-                "version": "{{user `version`}}"
-            },
-
-            "artifact": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
-            "artifact_type": "vagrant.box"
+            "box_tag": "{{user `atlas_username`}}/{{user `atlas_box_name`}}",
+            "access_token": "{{user `vagrantcloud_token`}}",
+            "version": "{{user `version`}}"
         }
     ]],
     "provisioners": [
