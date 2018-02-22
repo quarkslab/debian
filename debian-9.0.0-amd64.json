@@ -1,9 +1,9 @@
 {
   "atlas_box_name": "debian-9.0.0-amd64",
-  "iso_checksum": "08a25863ae2369de462e55b539050dab0adb03262a4aefda208e907ef9ea2fff2158a77f6a6eddb4ac7fbd2fcc9cc64edd34f70e211eceac4bb6f308fefc3f0a",
+  "iso_checksum": "ebfe25dc593967e39349b205480b0ec0103ef4a0468c602f4857e13d06d407bfe876162399e0e8d4dea5675953dc37ab585316f307ccf9f4440124b4f719df04",
   "iso_checksum_type": "sha512",
   "iso_name": "debian-9.0.0-amd64-netinst.iso",
-  "iso_url": "http://cdimage.debian.org/cdimage/release/9.0.0/amd64/iso-cd/debian-9.0.0-amd64-netinst.iso",
+  "iso_url": "http://cdimage.debian.org/cdimage/archive/9.2.1/amd64/iso-cd/debian-9.2.1-amd64-netinst.iso",
   "preseed" : "preseed-stretch.cfg",
   "vmware_guest_os_type": "debian9-64",
   "headless": "true"
