@@ -186,7 +186,8 @@
                 "SSH_PASSWORD={{user `ssh_password`}}",
                 "UPDATE={{user `update`}}"
             ],
-            "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'"
+            "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
+            "expect_disconnect": "true"
         },
         {
             "type": "shell",
