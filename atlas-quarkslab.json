@@ -162,6 +162,7 @@
 
             "scripts": [
                 "script/remove-cdrom-sources.sh",
+                "script/hardening.sh",
                 "script/update.sh",
                 "script/vagrant.sh",
                 "script/vmware.sh",
@@ -184,6 +185,7 @@
                 "rsync_proxy={{user `rsync_proxy`}}",
                 "SSH_USERNAME={{user `ssh_username`}}",
                 "SSH_PASSWORD={{user `ssh_password`}}",
+                "HARDENING={{user `hardening`}}",
                 "UPDATE={{user `update`}}"
             ],
             "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
